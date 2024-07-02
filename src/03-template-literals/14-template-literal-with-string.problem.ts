@@ -1,4 +1,4 @@
-type Route = unknown;
+type Route = `/${string}`; // used template litteral to determine the type of Route. Meaning, any route that starts with '/'
 
 export const goToRoute = (route: Route) => {};
 
