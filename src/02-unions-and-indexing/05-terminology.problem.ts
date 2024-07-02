@@ -1,13 +1,10 @@
 /**
- * It's important to understand the terminology around unions:
+ * A is a discriminated union, with 'type' as the discriminator.
  *
- * One of the type declarations below is a union.
- * One of the type declarations below is a discriminated union.
- * One of the type declarations below is an enum.
- *
- * Which is which?
+ * Discriminated unions have common properties which are used to
+ * differentiate between members of the union. In this case, type
+ * is the discriminator.
  */
-
 type A =
   | {
       type: "a";
@@ -22,8 +19,14 @@ type A =
       c: string;
     };
 
+/**
+ * B is a union, but not a discriminated union.
+ */
 type B = "a" | "b" | "c";
 
+/**
+ * C is an enum.
+ */
 enum C {
   A = "a",
   B = "b",

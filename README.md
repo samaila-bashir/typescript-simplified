@@ -19,8 +19,6 @@ npm run solution 01
 
 You'll notice that the course is split into modules. Each module is a group of related exercises.
 
-Each exercise is split into a `*.problem.ts` and a `*.solution.ts`.
-
 To take an exercise:
 
 1. Go into `*.problem.ts`
